@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Interest Rate</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="inputData" id="inputData">
+            <input type="text" class="formInputs" id="principle" placeholder="Principle">
+            <input type="text" class="formInputs" id="rate" placeholder="Rate .10 = 10%">
+            <input type="text" class="formInputs" id="frequency" placeholder="Loan duration in years">
+            <input type="text" class="formInputs" id="payment" placeholder="Monthly payment">
+            <button id="calcButton" onclick="getInputData()">Calculate</button>
+            <button id="clear" onclick="clearInputs(), clearTable(), clearChart()">Clear</button>
+        </div>
+        <div><canvas id="myChart" class="chart"></canvas></div>
+    
+        <table id="paymentTable">
+            <tr>
+                <th>Month</th>
+                <th>Remaining Months</th>
+                <th>Principle Remaining</th>
+                <th>Monthly Interest</th>
+                <th>Monthly Principal</th>
+                
+                <th>Total Interst Paid</th>
+                <th>Total Paid to Principle</th>
+                <th>Total Paid</th>
+            </tr>
+          
+        </table>
+    
+    </div>
+</body>
+</html>
